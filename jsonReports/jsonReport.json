@@ -1,0 +1,69 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/basicInteractions.spec.ts",
+          "tests/example.spec.ts",
+          "tests/alert.test.ts",
+          "tests/dropdown.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\playwright.config.ts",
+    "rootDir": "C:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.29.2",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "=================\n no tests found.\n=================",
+      "__isNotAFatalError": true
+    }
+  ]
+}
