@@ -12,18 +12,19 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt/test-results",
+        "outputDir": "c:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt",
+        "testDir": "c:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt",
         "testIgnore": [],
         "testMatch": [
           "tests/basicInteractions.spec.ts",
           "tests/example.spec.ts",
           "tests/alert.test.ts",
-          "tests/dropdown.test.ts"
+          "tests/dropdown.test.ts",
+          "frame.test.ts"
         ],
         "timeout": 30000
       }
@@ -50,8 +51,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\playwright.config.ts",
-    "rootDir": "C:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt",
+    "configFile": "c:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\playwright.config.ts",
+    "rootDir": "c:/Users/atopcu/OneDrive - Amadeus Workplace/Desktop/PracticePlaywrigt",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -59,11 +60,53 @@
     "workers": 10,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "=================\n no tests found.\n=================",
-      "__isNotAFatalError": true
+      "title": "tests\\dropdown.test.ts",
+      "file": "tests/dropdown.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "handling dropdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-01-27T11:02:22.437Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "c:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\test-results\\tests-dropdown-handling-dropdown\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a3d7e996dd4874286aa-29323e77f5205f0cc4d6",
+          "file": "tests/dropdown.test.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
     }
-  ]
+  ],
+  "errors": []
 }

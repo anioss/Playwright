@@ -2,11 +2,18 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig ={
-  testMatch: ["tests/basicInteractions.spec.ts","tests/example.spec.ts", "tests/alert.test.ts","tests/dropdown.test.ts"],
+  testMatch: ["tests/basicInteractions.spec.ts","tests/example.spec.ts",
+   "tests/alert.test.ts"
+   ,"tests/dropdown.test.ts",
+   "frame.test.ts"],
+
+  
 
   use: {
     headless: false,
-    screenshot: "on"
+    screenshot: "on",
+    
+    
   },
   retries: 0,
   reporter: [["dot"], ["json", {
