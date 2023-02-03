@@ -5,7 +5,9 @@ const config: PlaywrightTestConfig ={
   testMatch: ["tests/basicInteractions.spec.ts","tests/example.spec.ts",
    "tests/alert.test.ts"
    ,"tests/dropdown.test.ts",
-   "frame.test.ts"],
+   "frame.test.ts",
+  "calendar.test.ts",
+"uploadDownload.test.ts"],
 
   
 
