@@ -7,12 +7,14 @@ const config: PlaywrightTestConfig ={
    ,"tests/dropdown.test.ts",
    "frame.test.ts",
   "calendar.test.ts",
-"uploadDownload.test.ts"],
+"uploadDownload.test.ts",
+"pomTest/addToCart.test.ts"],
 
   
 
   use: {
     headless: false,
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     screenshot: "on",
     
     
