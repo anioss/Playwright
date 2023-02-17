@@ -7,7 +7,7 @@ export default class RegisterPage{
         await this.page.locator("#input-firstname")
         .type(firstname);
 
-
+1
     }
     async enterLastName(lastname: string){
         await this.page.locator("#input-lastname")

@@ -71,7 +71,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Login test_002",
+          "title": "add to cart test_003",
           "ok": false,
           "tags": [],
           "tests": [
@@ -85,49 +85,45 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 10298,
+                  "duration": 11187,
                   "error": {
-                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"My \"\u001b[39m\nReceived: \u001b[31m\"My \u001b[7mAccount\u001b[27m\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"My \"\u001b[39m\nReceived: \u001b[31m\"My \u001b[7mAccount\u001b[27m\"\u001b[39m\n    at C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pomTest\\addToCart.test.ts:42:32"
+                    "message": "page.hover: DOMException: Failed to execute 'evaluate' on 'Document': The string '((//img[@alt='iMac'])[1]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:37:26)\n    at InjectedScript._queryEngineAll (<anonymous>:4372:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4359:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:10:33)\n    at next (<anonymous>:4533:27)\n    at <anonymous>:4543:7\n    at Object.run (<anonymous>:4587:22)\n    at eval (eval at evaluate (:197:30), <anonymous>:1:14)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=((//img[@alt=\\'iMac\\'])[1]')\n  Failed to execute 'evaluate' on 'Document': The string '((//img[@alt='iMac'])[1]' is not a valid XPath expression.\n============================================================",
+                    "stack": "page.hover: DOMException: Failed to execute 'evaluate' on 'Document': The string '((//img[@alt='iMac'])[1]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:37:26)\n    at InjectedScript._queryEngineAll (<anonymous>:4372:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4359:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:10:33)\n    at next (<anonymous>:4533:27)\n    at <anonymous>:4543:7\n    at Object.run (<anonymous>:4587:22)\n    at eval (eval at evaluate (:197:30), <anonymous>:1:14)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=((//img[@alt=\\'iMac\\'])[1]')\n  Failed to execute 'evaluate' on 'Document': The string '((//img[@alt='iMac'])[1]' is not a valid XPath expression.\n============================================================\n    at SpecialHotPage.addToCart (C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pages\\specialHotPage.ts:11:25)\n    at C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pomTest\\addToCart.test.ts:59:19"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pomTest\\addToCart.test.ts",
-                        "column": 32,
-                        "line": 42
+                        "file": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\<anonymous>",
+                        "column": 26,
+                        "line": 37
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"My \"\u001b[39m\nReceived: \u001b[31m\"My \u001b[7mAccount\u001b[27m\"\u001b[39m\n\n\u001b[90m   at \u001b[39mpomTest\\addToCart.test.ts:42\n\n\u001b[0m \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[33mHomePage\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My \"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pomTest\\addToCart.test.ts:42:32\u001b[22m"
+                      "message": "page.hover: DOMException: Failed to execute 'evaluate' on 'Document': The string '((//img[@alt='iMac'])[1]' is not a valid XPath expression.\n\n\u001b[2m    at Object.queryAll (<anonymous>:37:26)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:4372:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:4359:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:197:30), <anonymous>:10:33)\u001b[22m\n\u001b[2m    at next (<anonymous>:4533:27)\u001b[22m\n\u001b[2m    at <anonymous>:4543:7\u001b[22m\n\u001b[2m    at Object.run (<anonymous>:4587:22)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:197:30), <anonymous>:1:14)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:199:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m=========================== logs ===========================\u001b[22m\n\u001b[2mwaiting for locator('xpath=((//img[@alt=\\'iMac\\'])[1]')\u001b[22m\n\u001b[2m  Failed to execute 'evaluate' on 'Document': The string '((//img[@alt='iMac'])[1]' is not a valid XPath expression.\u001b[22m\n\u001b[2m============================================================\u001b[22m\n\u001b[2m    at SpecialHotPage.addToCart (C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pages\\specialHotPage.ts:11:25)\u001b[22m\n\u001b[2m    at C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pomTest\\addToCart.test.ts:59:19\u001b[22m"
                     }
                   ],
-                  "stdout": [
-                    {
-                      "text": "\u001b[36m[class HomePage]\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-02-03T12:26:35.201Z",
+                  "startTime": "2023-02-17T06:40:39.814Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\test-results\\pomTest-addToCart-Login-test-002\\test-failed-1.png"
+                      "path": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\test-results\\pomTest-addToCart-add-to-cart-test-003\\test-failed-1.png"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\pomTest\\addToCart.test.ts",
-                    "column": 32,
-                    "line": 42
+                    "file": "C:\\Users\\atopcu\\OneDrive - Amadeus Workplace\\Desktop\\PracticePlaywrigt\\<anonymous>",
+                    "column": 26,
+                    "line": 37
                   }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "de488a82fdc52b0fe88f-651c9fc0809c157b89c5",
+          "id": "de488a82fdc52b0fe88f-d44f87eacec172f24dbb",
           "file": "pomTest/addToCart.test.ts",
-          "line": 33,
+          "line": 46,
           "column": 6
         }
       ]

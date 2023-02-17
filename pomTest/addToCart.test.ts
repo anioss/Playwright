@@ -30,7 +30,7 @@ test("Register test_001", async ({page, baseURL})=> {
 
 })
 
-test.only("Login test_002", async ({page, baseURL})=> {
+test("Login test_002", async ({page, baseURL})=> {
 
     const login = new LoginPage(page);
     await page.goto(`${baseURL}route=account/login`);
@@ -40,4 +40,25 @@ test.only("Login test_002", async ({page, baseURL})=> {
     await page.waitForTimeout(3000);
     console.log(HomePage);
     expect(await page.title()).toBe("My Account");
+})
+
+
+test.only("add to cart test_003", async ({page,baseURL})=>{
+    
+    const login = new LoginPage(page);
+    const homePage = new HomePage(page);
+    const special = new SpecialHotPage(page);
+    await page.goto(`${baseURL}route=account/login`);
+    await login.enterEmail("acttesting@gmail.com");
+    await login.enterPass("123qweASD!");
+    await login.clickLogin();
+    await homePage.clickOnSpecialHotMenu();
+    //await special.addToCart();
+    await homePage.clickOnContinue();
+    await page.waitForTimeout(2000);
+    await special.addToCart();
+    await page.waitForTimeout(2000);
+
+    
+    
 })

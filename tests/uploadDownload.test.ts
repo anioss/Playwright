@@ -22,7 +22,7 @@ test("Download files", async ({page}) => {
 
 })
 
-test.only("Upload file", async ({page}) => {
+test("Upload file", async ({page}) => {
 
     const url = await page.goto("https://blueimp.github.io/jQuery-File-Upload/")
     await page.setInputFiles("input[type='file']", ["uploadItems/gfx100s_sample_04_thum-1.jpg"]);
